@@ -1,0 +1,33 @@
+/* Настройки */
+@import "settings/variables";
+@import "settings/mixins";
+@import "settings/fonts";
+
+/* Основа */
+@import "../libs/normalize-css/normalize";
+@import "../libs/animate.css/source/_base";
+@import "../libs/animate.css/source/attention_seekers/shake";
+@import "settings/base";
+@import "settings/container";
+
+/* Блоки */
+@import "blocks/form/style";
+@import "blocks/logo/style";
+@import "blocks/button/style";
+@import "blocks/slide/style";
+@import "blocks/modal/style";
+@import "blocks/social/style";
+@import "blocks/main-header/style";
+@import "blocks/main-content/style";
+@import "blocks/site-nav/style";
+@import "blocks/user-nav/style";
+@import "blocks/main-nav/style";
+@import "blocks/stats/style";
+@import "blocks/advatages/style";
+@import "blocks/news/style";
+@import "blocks/review/style";
+@import "blocks/main-footer/style";
+@import "blocks/login-form/style";
+@import "blocks/main-work/style";
+@import "blocks/price-list/style";
+@import "blocks/haircut/style";

@@ -1,0 +1,56 @@
+/* Преимущества */
+
+@media (min-width: $breakpoint-tablet) {
+  .advatages {
+    padding-top: 40px;
+
+    background-color: $section-color;
+
+    &::before,
+    &::after {
+      bottom: -42px;
+      height: 42px;
+    }
+
+    &::before {
+      background-image: linear-gradient(to bottom left, $section-color 50%, transparent 50%);
+    }
+
+    &::after {
+      background-image: linear-gradient(to bottom right, $section-color 50%, transparent 50%);
+    }
+  }
+
+  .advatages__list {
+    width: auto;
+    padding: 0 4.6875% 50px;
+
+    text-align: left;
+  }
+
+  .advatages__item {
+    display: block;
+    margin-bottom: 45px;
+    padding: 0;
+    padding-left: 20.3125%;
+    padding-bottom: 35px;
+
+    border-bottom: 1px solid #4a4a4a;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      border-bottom: none;
+    }
+
+    &::before {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .advatages__toggles {
+    display: none;
+  }
+}

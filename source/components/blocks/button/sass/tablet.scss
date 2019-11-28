@@ -1,0 +1,10 @@
+/* Кнопка */
+
+@media (min-width: $breakpoint-tablet) {
+  .button {
+    &:hover,
+    &:focus {
+      border-color: #d5cabe;
+    }
+  }
+}

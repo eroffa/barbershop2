@@ -1,0 +1,54 @@
+/* Наши работы */
+
+@media (min-width: $breakpoint-tablet) {
+  .main-work__title {
+    width: 62.5%;
+    margin: 0;
+  }
+
+  .main-work__list {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-work__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 6.25%;
+
+    &--best::before {
+      top: 35px;
+      bottom: auto;
+    }
+  }
+
+  .main-work__photo {
+    width: 42.1875%;
+  }
+
+  .main-work__wrapp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 57.8125%;
+    padding: 0;
+    padding: 40px 7.8125%;
+
+    border: 1px solid #e5ddd5;
+    border-left: none;
+  }
+
+  .main-work__name {
+    margin-bottom: 40px;
+  }
+
+  .main-work__desc {
+    margin-bottom: 0;
+  }
+
+  .main-work__types {
+    margin-top: auto;
+  }
+}

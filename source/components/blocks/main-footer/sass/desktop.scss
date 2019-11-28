@@ -1,0 +1,28 @@
+/* Подвал */
+
+@media (min-width: $breakpoint-desktop) {
+  .main-footer {
+    padding-top: 50px;
+  }
+
+  .main-footer .container-fluid {
+    align-items: flex-start;
+  }
+
+  .main-footer__address {
+    width: 360px;
+    margin-right: 40px;
+  }
+
+  .main-footer__copyright {
+    box-sizing: border-box;
+    order: 3;
+    width: 165px;
+    margin-bottom: 0;
+  }
+
+  .main-footer__social {
+    order: 2;
+    width: 242px;
+  }
+}

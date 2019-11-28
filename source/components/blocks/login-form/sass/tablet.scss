@@ -1,0 +1,26 @@
+/* Форма входа */
+
+@media (min-width: $breakpoint-tablet) {
+
+  .login-form button[type="submit"] {
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background-color: #6a4d38;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+
+    &:disabled {
+      color: white;
+      background-color: #999;
+    }
+  }
+
+  .login-form button[type="submit"] span {
+    @include sr-not;
+  }
+}

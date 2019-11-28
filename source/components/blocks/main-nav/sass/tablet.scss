@@ -1,0 +1,22 @@
+/* Главная навигация */
+
+@media (min-width: $breakpoint-tablet) {
+  .main-nav {
+    background-color: black;
+  }
+
+  .main-nav__map {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+
+  .main-nav__site {
+    width: 90%;
+    margin-right: 2%;
+  }
+
+  .main-nav__user {
+    max-width: 50px;
+  }
+}

@@ -1,0 +1,93 @@
+/* Подвал */
+
+.main-footer {
+  padding-top: 70px;
+  padding-bottom: 25px;
+
+  color: white;
+
+  background-color: $footer-color;
+}
+
+.main-footer .container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__address {
+  order: 1;
+  margin-bottom: 25px;
+
+  font-style: normal;
+  text-align: center;
+}
+
+.main-footer__address-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: 700;
+}
+
+.main-footer__address-desc {
+  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.main-footer__address-phone {
+  display: block;
+  padding: 10px;
+
+  font-weight: 700;
+  color: white;
+
+  border: 1px solid #3e3e3e;
+
+  &:active {
+    color: rgba(white, 0.3);
+
+    background-color: #252525;
+    border: 1px solid transparent;
+  }
+}
+
+.main-footer__copyright {
+  order: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  text-align: center;
+}
+
+.main-footer__copyright-title {
+  display: block;
+  margin-bottom: 10px;
+  
+  font-weight: normal;
+}
+
+.main-footer__copyright-desc {
+  display: block;
+  padding: 10px;
+
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+
+  border: 1px solid #3e3e3e;
+
+  &:active {
+    color: rgba(white, 0.3);
+
+    background-color: #252525;
+    border: 1px solid transparent;
+  }
+}
+
+.main-footer__social {
+  order: 2;
+  margin: 0 -#{$indent-mobile} 30px;
+}

@@ -1,0 +1,12 @@
+/* Слайдер */
+
+@media (min-width: $breakpoint-desktop) {
+  .slide__toggle-btn {
+    width: 50px;
+  }
+
+  .slide__list {
+    width: 820px;
+    margin: 0 20px;
+  }
+}

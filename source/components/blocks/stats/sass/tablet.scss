@@ -1,0 +1,102 @@
+/* Статистика */
+
+@media (min-width: $breakpoint-tablet) {
+  .stats {
+    margin-top: -184px;
+    background-image: linear-gradient(to bottom, transparent 184px, $section-color 184px);
+  }
+
+  .stats .container-fluid {
+    padding: 0 #{$indent-tablet};
+  }
+
+  .stats__header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 27px 12.7% 25px 6.35%;
+
+    text-align: left;
+
+    background-color: white;
+  }
+
+  .stats__header-title {
+    width: 43.75%;
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    text-transform: none;
+  }
+
+  .stats__header-desc {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .stats__header-legend {
+    width: 50%;
+    padding: 0;
+
+    text-align: left;
+
+    &--top {
+      display: block;
+      color: rgba(black, 0.3)
+    }
+
+    &--bottom {
+      display: none;
+      background-color: transparent;
+    }
+  }
+
+  .stats__list tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stats__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 50%; // ie 11
+
+    &:nth-child(4n+1),
+    &:nth-child(4n+4) {
+      background-color: #404040;
+    }
+
+    &:nth-child(4n+2) {
+      background-color: #4e4e4e;
+    }
+
+    &:nth-child(4n+3) {
+      background-color: $section-color;
+    }
+  }
+
+  .stats__item sup {
+    top: -25px;
+    font-size: 40px;
+  }
+
+  .stats__value {
+    display: block;
+    width: 100%;
+    padding: 25px 10% 10px;
+
+    font-size: 72px;
+    text-align: left;
+  }
+
+  .stats__field {
+    display: block;
+    width: 100%;
+    padding: 0 10% 32px;
+
+    font-size: 20px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,49 @@
+/* Навигация по сайту */
+
+@media (min-width: $breakpoint-tablet) {
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-nav__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-nav__link {
+    position: relative;
+
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: $nav-color;
+    }
+
+    &[href]:active {
+      color: rgba(white, 0.3);
+
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .site-nav__item--active .site-nav__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+
+    height: 3px;
+
+    background-color: $nav-color;
+  }
+}

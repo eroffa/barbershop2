@@ -1,0 +1,39 @@
+/* Навигация по пользовательскому меню */
+
+@media (min-width: $breakpoint-tablet) {
+  .user-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-nav__item {
+    margin-right: 8px;
+    font-size: 0;
+  }
+
+  .user-nav__link {
+    padding: 0;
+    background-color: transparent;
+
+    &[href]:active {
+      background-color: transparent;
+    }
+  }
+
+  .user-nav__link span {
+    padding: 0;
+  }
+
+  .user-nav__icon {
+    position: relative;
+  }
+
+  .user-nav__link[href]:hover .user-nav__icon,
+  .user-nav__link[href]:focus .user-nav__icon {
+    fill: $nav-color;
+  }
+
+  .user-nav__link[href]:active .user-nav__icon {
+    fill: rgba(white, 0.3);
+  }
+}

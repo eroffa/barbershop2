@@ -1,0 +1,46 @@
+/* Преимущества */
+
+@media (min-width: $breakpoint-desktop) {
+  .advatages {
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+    &::before,
+    &::after {
+      bottom: -65px;
+      height: 65px;
+    }
+  }
+
+  .advatages__list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .advatages__item {
+    width: 33.33333333333333%;
+    padding: 125px 40px 0;
+
+    border: none;
+    border-right: 1px solid #4a4a4a;
+
+    &:nth-child(3n) {
+      border-right: none;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:nth-last-child(-n+3){
+      margin-bottom: 0;
+    }
+  }
+}

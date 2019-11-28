@@ -1,0 +1,10 @@
+/* Социальные сети */
+
+@media (min-width: $breakpoint-tablet) {
+  .social__link {
+    &:hover,
+    &:focus {
+      border-color: #545454;
+    }
+  }
+}

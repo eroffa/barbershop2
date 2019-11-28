@@ -1,0 +1,83 @@
+/* Форма входа */
+
+.login-form {
+
+}
+
+.login-form__item {
+  margin: 0;
+
+  &--login {
+    margin-bottom: 6px;
+  }
+
+  &--password {
+    margin-bottom: 30px;
+  }
+
+  &--remember {
+    display: flex;
+    margin-bottom: 35px;
+  }
+}
+
+.login-form__item--login label,
+.login-form__item--password label {
+  @include sr-only;
+}
+
+.login-form__item input {
+  width: 100%;
+  padding-right: 50px;
+
+  background: white no-repeat 93% center;
+}
+
+.login-form__item--login input {
+  background-image: url("../img/login-form/user.png");
+  background-size: 20px auto;
+}
+
+.login-form__item--password input {
+  background-image: url("../img/login-form/pass.png");
+  background-size: 18px auto;
+}
+
+
+.login-form__item--remember a {
+  margin-left: auto;
+
+  color: black;
+  text-decoration: underline;
+}
+
+.login-form button[type="submit"] {
+  box-sizing: border-box;
+  width: 46.42857142857143%;
+  padding: 13px 20px;
+
+  font: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: $nav-color;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: #6a4d38;
+  }
+
+  &:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+}
+
+.login-form button[type="submit"] span {
+  @include sr-only;
+}

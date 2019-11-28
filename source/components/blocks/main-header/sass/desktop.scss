@@ -1,0 +1,22 @@
+/* Шапка сайта */
+
+@media (min-width: $breakpoint-desktop) {
+  .main-header {
+    min-height: 720px;
+  }
+
+  .main-header--inner {
+    min-height: 315px;
+    padding-bottom: 65px;
+
+    &::before,
+    &::after {
+      height: 65px;
+    }
+  }
+
+  .main-header .container-fluid {
+    margin: 0 auto;
+    padding: 0 #{$indent-desktop};
+  }
+}

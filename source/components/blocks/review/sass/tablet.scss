@@ -1,0 +1,118 @@
+/* Отзывы */
+
+@media (min-width: $breakpoint-tablet) {
+  .review {
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .review .container-fluid {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .review__title {
+    max-width: 70%;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .review__button {
+    max-width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: 35px;
+  }
+
+  .review__wrapp {
+    margin: 0;
+  }
+
+  .review__toggle-btn {
+    display: block;
+    border: 1px solid #e5ddd5;
+
+    &:hover,
+    &:focus {
+      border-color: #d5cabe;
+    }
+
+    &:active {
+      border-color: rgba(#755a46, 0.5);
+    }
+  }
+
+  .review__toggle-btn--prev {
+    &:hover::before,
+    &:focus::before {
+      border-right-color: #755a46;
+    }
+
+    &:active::before {
+      border-right-color: rgba(#755a46, 0.5);
+    }
+  }
+
+  .review__toggle-btn--next {
+    &:hover::before,
+    &:focus::before {
+      border-left-color: #755a46;
+    }
+
+    &:active::before {
+      border-left-color: rgba(#755a46, 0.5);
+    }
+  }
+
+  .review__list {
+    width: 85%;
+
+    border: 1px solid #e5ddd5;
+    border-left: none;
+    border-right: none;
+  }
+
+  .review__item {
+    padding: 33px 30px 34px;
+  }
+
+  .review__item-ava {
+    padding: 0;
+  }
+
+  .review__img {
+    border-radius: 50%;
+  }
+
+  .review__toggles {
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+
+    padding: 0 25px;
+
+    background-color: $content-color;
+
+    transform: translateX(-50%);
+  }
+
+  .review__toggle {
+
+    &:hover::before {
+      background-color: $section-color;
+    }
+
+    &:active::before {
+      background-color: rgba($section-color, 0.5);
+    }
+  }
+}

@@ -1,0 +1,102 @@
+/* Преимущества */
+
+.advatages {
+  position: relative;
+
+  padding-top: 20px;
+
+  color: #f7f4f1;
+
+  background-color: $header-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+
+    width: 50%;
+    height: 35px;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to bottom left, $header-color 50%, transparent 50%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to bottom right, $header-color 50%, transparent 50%);
+  }
+}
+
+.advatages__list {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.advatages__item {
+  position: relative;
+  padding: 125px 9% 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 95px;
+    height: 95px;
+
+    background: no-repeat;
+
+    transform: translateX(-50%);
+  }
+
+  &--speed::before {
+    background-image: url("../img/advatages/speed.svg");
+  }
+
+  &--cool::before {
+    height: 88px;
+    background-image: url("../img/advatages/cool.svg");
+  }
+
+  &--price::before {
+    height: 91px;
+    background-image: url("../img/advatages/price.svg");
+  }
+}
+
+.advatages__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advatages__desc {
+  margin: 0;
+  font-size: 20px;
+}
+
+.advatages__toggles {
+  padding-bottom: 10px;
+}
+
+.advatages__toggle {
+  &::before {
+    border: 2px solid rgba(white, 0.5);
+  }
+
+  &.active::before {
+    background-color: white;
+  }
+
+  &:active::before {
+    background-color: white;
+  }
+}

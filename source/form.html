@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Запись на стрижку</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <include src="includes/_head.html"></include>
+</head>
+
+<body>
+  <include src="includes/_no-js.html"></include>
+  <div class="hidden">
+    <include src="includes/sprite.svg"></include>
+  </div>
+
+  <header class="main-header main-header--inner">
+    <a class="main-header__logo logo" href="#">
+      <picture>
+        <source media="(min-width: 1080px)" srcset="img/logo/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logotype-tablet.svg">
+        <img class="logo__img" src="img/logo/logotype-mobile.svg" width="226" height="30" alt="Логотип">
+      </picture>
+    </a>
+
+    <div class="main-header__nav main-nav main-nav--close main-nav--nojs">
+      <div class="container-fluid">
+        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+        <nav class="main-nav__map">
+          <ul class="main-nav__site site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="photo.html">Наши работы</a>
+            </li>
+            <li class="site-nav__item site-nav__item--active">
+              <a class="site-nav__link">Записаться</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link user-nav__link--sigin" href="#" aria-label="Войти">
+                <span>
+                  <svg class="user-nav__icon user-nav__icon--sigin" width="16" height="16" role="img">
+                    <use xlink:href="#icon-sigin"></use>
+                  </svg>
+                  Войти
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content main-content--inner">
+    <div class="container-fluid">
+      <h1 class="main-content__title">Запись на стрижку</h1>
+      <a class="main-content__button button" href="#">На главную</a>
+    </div>
+
+    <section class="haircut">
+      <div class="container-fluid">
+        <h2 class="sr-only">Заполните форму</h2>
+        <div class="haircut__form form">
+          <form action="" method="post" name="haircut">
+            <div class="haircut__list haircut__list--client" role="group">
+              <h3 class="sr-only">Данные клиента</h3>
+              <p class="haircut__item haircut__item--name">
+                <label for="name">Введите ваше имя</label>
+                <input id="name" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+              </p>
+              <p class="haircut__item haircut__item--surname">
+                <label for="surname">Введите вашу фамилию</label>
+                <input id="surname" type="text" name="surname" placeholder="Фамилия" autocomplete="off">
+              </p>
+              <p class="haircut__item haircut__item--patronymic">
+                <label for="patronymic">Введите ваше отчество</label>
+                <input id="patronymic" type="text" name="patronymic" placeholder="Отчество" autocomplete="off">
+              </p>
+              <p class="haircut__item haircut__item--phone">
+                <label for="phone">Введите ваш телефон</label>
+                <input id="phone" type="tel" name="phone" placeholder="Контактный телефон" autocomplete="off" required>
+              </p>
+              <p class="haircut__item haircut__item--email">
+                <label for="email">Введите ваш email</label>
+                <input id="email" type="email" name="email" placeholder="Контактный email" autocomplete="off">
+              </p>
+              <p class="haircut__item haircut__item--info">
+                <label for="info">Введите дополнительную информацию</label>
+                <textarea id="info" name="info" placeholder="Доп. информация для мастера"></textarea>
+              </p>
+            </div>
+
+            <div class="haircut__list haircut__list--model" role="group">
+              <h3 class="haircut__title">Выберите модель бороды:</h3>
+              <p class="haircut__item">
+                <input id="admiral" type="radio" name="model" value="admiral" checked>
+                <label for="admiral">
+                  <span>Адмирал</span>
+                  <svg width="52" height="49" aria-hidden="true" role="presentation" focusable="false">
+                    <use xlink:href="#icon-admiral"></use>
+                  </svg>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <input id="lumberjack" type="radio" name="model" value="lumberjack">
+                <label for="lumberjack">
+                  <span>Лесоруб</span>
+                  <svg width="58" height="68" aria-hidden="true" role="presentation" focusable="false">
+                    <use xlink:href="#icon-lumberjack"></use>
+                  </svg>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <input id="polar" type="radio" name="model" value="polar">
+                <label for="polar">
+                  <span>Полярник</span>
+                  <svg width="63" height="78" aria-hidden="true" role="presentation" focusable="false">
+                    <use xlink:href="#icon-polar"></use>
+                  </svg>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <input id="boyarin" type="radio" name="model" value="boyarin">
+                <label for="boyarin">
+                  <span>Боярин</span>
+                  <svg width="57" height="97" aria-hidden="true" role="presentation" focusable="false">
+                    <use xlink:href="#icon-boyarin"></use>
+                  </svg>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <input id="sage" type="radio" name="model" value="sage">
+                <label for="sage">
+                  <span>Мудрец</span>
+                  <svg width="45" height="104" aria-hidden="true" role="presentation" focusable="false">
+                    <use xlink:href="#icon-sage"></use>
+                  </svg>
+                </label>
+              </p>
+            </div>
+
+            <div class="haircut__list haircut__list--add" role="group">
+              <h3 class="haircut__title">Дополнительные услуги:</h3>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Подкрасить бороду" checked>
+                  <span>Подкрасить бороду</span>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Накрутить усы" checked>
+                  <span>Накрутить усы</span>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Причесать бороду">
+                  <span>Причесать бороду</span>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Подровнять виски">
+                  <span>Подровнять виски</span>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Убрать седину">
+                  <span>Убрать седину</span>
+                </label>
+              </p>
+              <p class="haircut__item">
+                <label>
+                  <input type="checkbox" name="add[]" value="Отполировать лысину">
+                  <span>Отполировать лысину</span>
+                </label>
+              </p>
+            </div>
+
+            <button type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container-fluid">
+      <address class="main-footer__address">
+        <h2 class="main-footer__address-title">Барбершоп Бородинский</h2>
+        <p class="main-footer__address-desc">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a class="main-footer__address-phone" href="tel:#">Тел.: +7 (812) 555-66-66</a>
+      </address>
+
+      <p class="main-footer__copyright">
+        <b class="main-footer__copyright-title">Разработано:</b>
+        <a class="main-footer__copyright-desc" href="#">Html Academy</a>
+      </p>
+
+      <p class="main-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <a class="social__link" href="#" aria-label="Вконтакте">
+          <svg class="social__icon social__icon--vk" width="36" height="36" role="img">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#" aria-label="Facebook">
+          <svg class="social__icon social__icon--fb" width="50" height="50" role="img">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#" aria-label="Instagram">
+          <svg class="social__icon social__icon--inst" width="36" height="36" role="img">
+            <use xlink:href="#icon-inst"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <section class="modal modal--login hidden">
+    <h2 class="modal__title">Личный кабинет</h2>
+    <p class="modal__desc">Введите свой логин и пароль, чтобы войти</p>
+
+    <div class="form login-form">
+      <form action="" method="post" name="auth">
+        <p class="login-form__item login-form__item--login">
+          <input id="login" type="text" name="login" placeholder="Логин" autocomplete="off" required>
+          <label for="login">Введите логин</label>
+        </p>
+        <p class="login-form__item login-form__item--password">
+          <input id="password" type="password" name="password" placeholder="Пароль" autocomplete="off" required>
+          <label for="password">Введите пароль</label>
+        </p>
+        <p class="login-form__item login-form__item--remember">
+          <input id="remember" type="checkbox" name="remember">
+          <label for="remember">Запомнить меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+
+        <button type="submit">Войти<span> в личный кабинет</span></button>
+      </form>
+    </div>
+
+    <button class="modal__close button" type="button"><span>Закрыть</span></button>
+  </section>
+
+  <div class="overlay hidden"></div>
+
+  <template class="hidden" id="notice">
+      <section class="modal modal--notice">
+        <h2 class="modal__title">Это успех!</h2>
+        <p class="modal__desc">Ваша заявка отправлена. Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+        <button class="modal__close button" aria-label="Закрыть окно"></button>
+      </section>
+    </template>
+
+  <script src="js/script.min.js?ver=1.0"></script>
+</body>
+
+</html>

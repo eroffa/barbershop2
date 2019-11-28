@@ -1,0 +1,52 @@
+/* Запись на стрижку */
+
+@media (min-width: $breakpoint-desktop) {
+  .haircut {
+    padding-bottom: 90px;
+  }
+
+  .haircut__list {
+    &--model {
+      justify-content: space-between;
+    }
+
+  }
+
+  .haircut__item {
+
+    &--name {
+      width: 295px;
+      margin-right: 37px;
+    }
+
+    &--surname {
+      width: 295px;
+      margin-right: 37px;
+    }
+
+    &--patronymic {
+      width: 295px;
+    }
+
+    &--phone {
+      width: 462px;
+    }
+
+    &--email {
+      width: 463px;
+      margin-left: auto;
+    }
+
+    &--info {
+    }
+  }
+
+  .haircut__list--add .haircut__item {
+    width: 31%;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

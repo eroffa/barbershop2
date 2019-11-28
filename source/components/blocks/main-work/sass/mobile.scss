@@ -1,0 +1,143 @@
+  /* Наши работы */
+
+.main-work {
+  position: relative;
+  z-index: 1;
+
+  padding-bottom: 35px;
+
+  background-color: $content-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+
+    width: 50%;
+    height: 35px;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to bottom left, $content-color 50%, transparent 50%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to bottom right, $content-color 50%, transparent 50%);
+  }
+}
+
+.main-work__item {
+  position: relative;
+  margin-bottom: 7.142857142857143%;
+
+  &--best::before {
+    content: "Работа месяца";
+    position: absolute;
+    bottom: 320px;
+
+    padding: 12px 25px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+    background: no-repeat right center;
+    background-image: linear-gradient(to right, $nav-color 96%, transparent 96%), url("../img/main-work/flag.svg");
+  }
+}
+
+.main-work__photo {
+  margin: 0;
+  line-height: 0;
+}
+
+.main-work__wrapp {
+  padding: 8.928571428571429% 7.142857142857143%;
+
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+
+.main-work__name {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  text-transform: none;
+}
+
+.main-work__desc {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.main-work__types {
+  @include reset-ul;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -28px;
+}
+
+.main-work__type {
+  position: relative;
+
+  margin-left: 28px;
+  margin-top: 20px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &--haircut {
+    padding-left: 35px;
+  }
+
+  &--shaving {
+    padding-left: 45px;
+  }
+
+  &--mustache {
+    padding-left: 55px;
+  }
+}
+
+.main-work__type {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background: no-repeat;
+
+    transform: translateY(-50%);
+  }
+
+  &--haircut::before {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/main-work/haircut.svg");
+  }
+
+  &--shaving::before {
+    width: 23px;
+    height: 21px;
+
+    background-image: url("../img/main-work/shaving.svg");
+  }
+
+  &--mustache::before {
+    width: 45px;
+    height: 12px;
+
+    background-image: url("../img/main-work/mustache.svg");
+  }
+}

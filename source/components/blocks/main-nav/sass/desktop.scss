@@ -1,0 +1,19 @@
+/* Главная навигация */
+
+@media (min-width: $breakpoint-desktop) {
+  .main-nav {
+    margin-bottom: 60px;
+  }
+
+  .main-nav__map {
+    padding: 0;
+  }
+
+  .main-nav__site {
+    width: 83.33333333333333%;
+  }
+
+  .main-nav__user {
+    max-width: 14.58333333333333%;
+  }
+}

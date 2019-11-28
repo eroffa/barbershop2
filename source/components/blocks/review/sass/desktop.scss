@@ -1,0 +1,41 @@
+/* Отзывы */
+
+@media (min-width: $breakpoint-desktop) {
+  .review {
+    padding-bottom: 45px;
+  }
+
+  .review__wrapp {
+    margin-bottom: 40px;
+  }
+
+  .review__list {
+    width: 820px;
+    margin: 0 20px;
+
+    border: 1px solid #e5ddd5;
+  }
+
+  .review__item {
+    padding: 0;
+  }
+
+  .review__item-ava {
+    width: 248px;
+    margin-right: 70px;
+  }
+
+  .review__img {
+    border-radius: 0;
+  }
+
+  .review__item-wrapp {
+    width: 425px;
+    padding: 33px 0;
+  }
+
+  .review__toggles {
+    position: relative;
+    background-color: transparent;
+  }
+}

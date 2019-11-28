@@ -1,0 +1,25 @@
+/* Кнопка */
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 30px;
+
+  font: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 1px solid #e5ddd5;
+  outline: none;
+
+  cursor: pointer;
+
+  &:active {
+    color: rgba(black, 0.3);
+    background-color: #d5c9bd;
+  }
+}

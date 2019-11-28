@@ -1,0 +1,61 @@
+/* Шапка сайта */
+
+@media (min-width: $breakpoint-tablet) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    min-height: 470px;
+
+    background: $header-color url("../img/main-header/bg-header.jpg") no-repeat center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-header/bg-header@2x.jpg");
+    }
+  }
+
+  .main-header--inner {
+    position: relative;
+    
+    min-height: 245px;
+    padding-bottom: 42px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      width: 50%;
+      height: 42px;
+    }
+
+    &::before {
+      left: 0;
+      background-image: linear-gradient(to bottom left, transparent 50%, $content-color 50%);
+    }
+
+    &::after {
+      right: 0;
+      background-image: linear-gradient(to bottom right, transparent 50%, $content-color 50%);
+    }
+  }
+
+  .main-header .container-fluid {
+    margin: 0;
+    padding: 0 #{$indent-tablet};
+  }
+
+  .main-header__logo {
+    order: 2;
+    width: 370px;
+    margin: 0 auto;
+
+    background-color: transparent;
+  }
+
+  .main-header__nav {
+    order: 1;
+    margin-bottom: 40px;
+  }
+}

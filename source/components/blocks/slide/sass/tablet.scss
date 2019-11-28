@@ -1,0 +1,62 @@
+/* Слайдер */
+
+@media (min-width: $breakpoint-tablet) {
+  .slide__wrapp {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .slide__toggle-btn {
+    position: relative;
+
+    display: block;
+    width: 7.5%;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+
+      width: 0;
+      height: 0;
+
+      border: 6px solid transparent;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .slide__toggle-btn--prev {
+    &::before {
+      left: 30%;
+      border-right: 12px solid black;
+    }
+  }
+
+  .slide__toggle-btn--next {
+    &::before {
+      right: 30%;
+      border-left: 12px solid black;
+    }
+  }
+
+  .slide__list {
+    width: 85%;
+  }
+
+  .slide__toggle:hover::before,
+  .slide__toggle:focus::before {
+    background-color: black;
+  }
+
+  .slide__toggle:active::before {
+    background-color: rgba(black, 0.5);
+  }
+}

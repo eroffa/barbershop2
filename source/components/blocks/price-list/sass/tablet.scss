@@ -1,0 +1,85 @@
+/* Прейскурант */
+
+@media (min-width: $breakpoint-tablet) {
+  .price-list {
+    padding-top: 85px;
+    padding-bottom: 55px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .price-list__title {
+    margin-bottom: 45px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .price-list__list {
+    display: table;
+    margin-bottom: 10px;
+  }
+
+  .price-list__list tbody {
+    display: table-row-group;
+  }
+
+  .price-list__item {
+    display: table-row;
+  }
+
+  .price-list__cell {
+    display: table-cell;
+    padding: 15px 20px;
+    border: 1px solid #4a4a4a;
+  }
+
+  .price-list__num {
+    width: 10%;
+
+    color: rgba(white, 0.3);
+    text-align: center;
+  }
+
+  .price-list__name {
+    width: 35%;
+  }
+
+  .price-list__desc {
+    order: 0;
+    width: 25%;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .price-list__desc span {
+    display: none;
+  }
+
+  .price-list__price {
+    order: 0;
+    width: 25%;
+
+    text-align: left;
+  }
+
+  .price-list__time {
+    width: 100%;
+  }
+
+  .price-list__time-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 13.28125%;
+  }
+
+  .price-list__time-desc {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+}

@@ -1,0 +1,22 @@
+/* Основное содержимое сайта */
+
+.main-content {
+  &--inner {
+    padding-top: 30px;
+    background-color: $content-color;
+  }
+}
+
+.main-content__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-content__button {
+  display: none;
+}

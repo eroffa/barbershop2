@@ -1,0 +1,28 @@
+/* Основное содержимое сайта */
+
+@media (min-width: $breakpoint-tablet) {
+  .main-content {
+    &--inner {
+      padding-top: 60px;
+    }
+  }
+
+  .main-content .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .main-content__title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .main-content__button {
+    display: inline-block;
+    max-width: 25%;;
+    margin-left: auto;
+    margin-bottom: 40px;
+    padding: 12px 30px;
+  }
+}

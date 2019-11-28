@@ -1,0 +1,52 @@
+/* Модальное окно */
+
+.modal {
+  position: fixed;
+  top: 135px;
+  left: 50%;
+  z-index: 10;
+
+  min-width: $width-mobile;
+  max-width: 460px;
+  width: 87.5%;
+  padding: 30px #{$indent-mobile} 37px;
+
+  background-color: $content-color;
+  box-shadow: 0 30px 40px black;
+
+  transform: translateX(-50%);
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__desc {
+  margin: 0;
+  margin-bottom: 22px;
+
+  text-align: center;
+}
+
+.modal__close {
+  display: flex;
+  justify-content: center;
+  width: 46.42857142857143%;
+  padding: 12px 20px;
+}
+
+.modal--login .modal__close  {
+  margin-top: -50px;
+  margin-left: auto;
+}
+
+.modal--notice .modal__close  {
+  width: 100%;
+}

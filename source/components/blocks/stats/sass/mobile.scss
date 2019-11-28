@@ -1,0 +1,92 @@
+/* Статистика */
+
+.stats .container-fluid {
+  padding: 0;
+}
+
+.stats__header {
+  padding: 27px 12.5% 25px;
+  text-align: center;
+}
+
+.stats__header-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats__header-desc {
+  margin: 0;
+  font-size: 20px;
+}
+
+.stats__header-legend {
+  padding: 20px $indent-mobile;
+
+  font-size: 20px;
+  text-align: center;
+
+  &--top {
+    display: none;
+  }
+
+  &--bottom {
+    display: block;
+
+    color: rgba(white, 0.3);
+
+    background-color: $header-color;
+  }
+}
+
+.stats__list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.stats__item {
+  &:nth-child(4n+1) {
+    background-color: #404040;
+  }
+
+  &:nth-child(4n+2),
+  &:nth-child(4n+4) {
+    background-color: #4e4e4e;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: $section-color;
+  }
+}
+
+.stats__item sup {
+  top: -15px;
+  font-size: 22px;
+}
+
+.stats__value {
+  width: 55%;
+  padding: 19px 0 19px;
+  padding-left: $indent-mobile;
+  padding-right: 5%;
+
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  color: white;
+}
+
+.stats__field {
+  width: 40%;
+  padding: 19px 0 19px;
+  padding-right: $indent-mobile;
+
+  line-height: 1;
+  color: #f7f4f1;
+  text-align: right;
+}

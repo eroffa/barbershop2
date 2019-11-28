@@ -1,0 +1,114 @@
+/* Прейскурант */
+
+.price-list {
+  position: relative;
+
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  color: white;
+  background-color: $section-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+
+    width: 50%;
+    height: 35px;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to bottom left, $section-color 50%, transparent 50%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to bottom right, $section-color 50%, transparent 50%);
+  }
+}
+
+.price-list__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price-list__list {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.price-list__list tbody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.price-list__cell {
+  display: flex;
+}
+
+.price-list__num {
+  display: none;
+}
+
+.price-list__name {
+  width: 75%;
+  padding-right: 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price-list__desc {
+  order:  2;
+  width: 75%;
+  padding-right: 30px;
+}
+
+.price-list__price {
+  order: 1;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.price-list__time {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 15px 3.125%;
+
+  border: 1px solid #484848;
+}
+
+.price-list__time-icon {
+  width: 56px;
+  height: 56px;
+  margin-right: 12.5%;
+
+  fill: white;
+}
+
+.price-list__time-desc {
+  display: inline-block;
+
+  font-size: 20px;
+  font-weight: normal;
+}

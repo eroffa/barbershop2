@@ -1,0 +1,31 @@
+/* Цвета */
+$header-color: #242424;
+$nav-color: #826550;
+$section-color: #353535;
+$content-color: #f8f5f2;
+$footer-color: #292929;
+
+/* Размер шрифта */
+$ff: "PTSans Narrow", Arial, sans-serif;
+$fz: 18px;
+$lh: 27px;
+
+/* Размер контейнера */
+$width-mobile: 280px;
+$width-tablet: 640px;
+$width-desktop: 960px;
+
+/* Breakpoint */
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1080px;
+$breakpoint-mobile-only: $breakpoint-tablet - 1;
+
+// Отступы
+$indent-mobile: 20px / $breakpoint-mobile * 100%;
+$indent-tablet: 64px / $breakpoint-tablet * 100%;
+$indent-desktop: 60px / $breakpoint-desktop * 100%;
+
+/* Ретина */
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,67 @@
+/* Наши работы */
+
+@media (min-width: $breakpoint-desktop) {
+  .main-work {
+    padding-bottom: 85px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .main-work__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -39px;
+    margin-bottom: -40px;
+  }
+
+  .main-work__item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 294px;
+    margin-left: 39px;
+    margin-bottom: 40px;
+
+    &--wide {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &--best::before {
+      right: 0;
+      top: 30px;
+
+      background: no-repeat left center;
+      background-image: linear-gradient(to left, $nav-color 96%, transparent 96%), url("../img/main-work/flag-inver.svg");
+    }
+  }
+
+  .main-work__photo {
+    width: 100%;
+  }
+
+  .main-work__item--wide .main-work__photo {
+    width: 50%;
+  }
+
+  .main-work__wrapp {
+    flex-grow: 1;
+    width: 100%;
+
+    border: 1px solid #e5ddd5;
+    border-top: none;
+  }
+
+  .main-work__item--wide .main-work__wrapp {
+    border: 1px solid #e5ddd5;
+    border-left: none;
+  }
+
+  .main-work__item--wide .main-work__wrapp {
+    width: 50%;
+    padding: 135px 115px 30px 40px;
+  }
+}

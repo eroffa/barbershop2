@@ -1,0 +1,67 @@
+/* Новости и акции */
+
+@media (min-width: $breakpoint-tablet) {
+  .news {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  .news .container-fluid {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .news__title {
+    max-width: 70%;
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .news__button {
+    order: 2;
+    max-width: 30%;
+    margin-left: auto;
+  }
+
+  .news__list {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .news__item {
+    width: 46.875%;
+    margin: 0;
+    margin-right: $indent-mobile;
+    margin-bottom: 30px;
+    padding: 0;
+
+    border-bottom: none;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n+1):nth-last-child(-n+2),
+    &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
+      margin-bottom: 0;
+    }
+  }
+
+  .news__link {
+
+  }
+
+  .news__date {
+
+  }
+
+  .news__desc {
+
+  }
+}

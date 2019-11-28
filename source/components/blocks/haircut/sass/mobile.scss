@@ -1,0 +1,180 @@
+/* Запись на стрижку */
+
+.haircut {
+  position: relative;
+
+  padding-bottom: 40px;
+
+  background-color: $content-color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+
+    width: 50%;
+    height: 40px;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to bottom left, $content-color 50%, transparent 50%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to bottom right, $content-color 50%, transparent 50%);
+  }
+}
+
+.haircut__form form {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.haircut__list {
+  @include reset-ul;
+  border: none;
+
+  &--client {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  &--model {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+
+  &--add {
+    margin-bottom: 25px;
+  }
+}
+
+.haircut__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.haircut__list--model .haircut__title {
+  width: 100%;
+}
+
+.haircut__item {
+  display: flex;
+  margin: 0;
+
+  &--name {
+    margin-bottom: 6px;
+  }
+
+  &--surname {
+    order: -1;
+    margin-bottom: 6px;
+  }
+
+  &--patronymic {
+    margin-bottom: 32px;
+  }
+
+  &--phone {
+    margin-bottom: 6px;
+  }
+
+  &--email {
+    margin-bottom: 32px;
+  }
+}
+
+.haircut__list--model .haircut__item {
+  justify-content: center;
+  width: 33.33333333333333%;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.haircut__list--add .haircut__item {
+  margin-bottom: 35px;
+}
+
+.haircut__item label {
+  @include sr-only;
+}
+
+.haircut__list--model label {
+  @include sr-not;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  text-transform: lowercase;
+}
+
+.haircut__list--model input[type="radio"] + label {
+  align-items: center;
+  padding-left: 0;
+  padding-top: 55px;
+
+  &::before,
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  &::after {
+    top: 16px;
+
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.haircut__list--model span {
+  margin-bottom: 10px;
+}
+
+.haircut__item input,
+.haircut__item textarea {
+  width: 100%;
+}
+
+.haircut__item textarea {
+  min-height: 112px;
+  resize: none;
+}
+
+.haircut__list--add label {
+  @include sr-not;
+
+  &::before {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.haircut__list--add label > input[type=checkbox] + span {
+  &::before {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.haircut__form button[type="submit"] {
+  width: 100%;
+}

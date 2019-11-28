@@ -1,0 +1,66 @@
+/* Модальное окно */
+
+@media (min-width: $breakpoint-tablet) {
+  .modal {
+    box-sizing: border-box;
+    padding: 55px 70px 60px;
+  }
+
+  .modal__title {
+    font-size: 40px;
+  }
+
+  .modal--login .modal__close {
+    position: absolute;
+    top: 60px;
+    right: -90px;
+
+    width: 36px;
+    height: 36px;
+    margin: 0;
+
+    border: none;
+
+    &:active {
+      background: transparent;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 36px;
+      height: 2px;
+      margin-left: -18px;
+
+      background-color: white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: rgba(white, 0.5);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(white, 0.3);
+    }
+  }
+
+  .modal--login .modal__close span {
+    @include sr-only;
+  }
+}

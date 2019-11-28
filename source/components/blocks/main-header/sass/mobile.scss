@@ -1,0 +1,21 @@
+/* Шапка сайта */
+
+.main-header .container-fluid {
+  padding: 0;
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85px;
+
+  color: white;
+  background-color: $header-color;
+
+  // ie 11
+  &::after{
+    content:'';
+    min-height: inherit;
+  }
+}

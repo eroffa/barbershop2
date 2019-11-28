@@ -1,0 +1,47 @@
+/* Статистика */
+
+@media (min-width: $breakpoint-desktop) {
+  .stats {
+    margin-top: -159px;
+    background-image: linear-gradient(to bottom, transparent 159px, $section-color 159px);
+  }
+
+  .stats .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 #{$indent-desktop};
+  }
+
+  .stats__header {
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 33.334%;
+    padding: 35px 40px 27px;
+  }
+
+  .stats__header-title {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .stats__header-desc {
+    width: 100%;
+    margin-bottom: 18px;
+    padding-right: 30px;
+  }
+
+  .stats__header-legend {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .stats__list {
+    display: flex;
+    width: 66.667%;
+  }
+
+  .stats__item {
+    max-width: 100%;
+  }
+}

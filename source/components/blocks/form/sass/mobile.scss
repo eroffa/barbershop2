@@ -1,0 +1,147 @@
+/* Элементы формы */
+
+.form {
+  box-sizing: border-box;
+}
+
+.form input,
+.form textarea {
+  @include placeholder {
+    color: black;
+  }
+
+  padding: 10px 17px;
+
+  font: inherit;
+  line-height: 1;
+  color: black;
+
+  background-color: white;
+  border: 1px solid #e5ddd5;
+  outline: none;
+
+  &:active {
+    border-color: #999999;
+  }
+
+  &.error {
+    box-shadow: 0 0 15px -3px red;
+
+    animation-name: shake;
+    animation-duration: 1s;
+  }
+}
+
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  @include sr-only;
+}
+
+.form input[type="checkbox"] + label,
+.form input[type="radio"] + label,
+.form label > input[type="checkbox"] + span,
+.form label > input[type="radio"] + span {
+  position: relative;
+
+  padding-left: 48px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background: white no-repeat center;
+    border: 1px solid #e5ddd5;
+  }
+
+  &:active::before {
+    background-color: #d5c9bd;
+  }
+}
+
+.form input[type="checkbox"] + label,
+.form label > input[type="checkbox"] + span {
+  &::before {
+    background-size: 22px auto;
+  }
+
+  &:active::before {
+    background-image: url("../img/form/checked.svg");
+  }
+}
+
+.form input[type="checkbox"]:checked + label,
+.form label > input[type="checkbox"]:checked + span {
+  &::before {
+    background-image: url("../img/form/checked.svg");
+  }
+
+  &:active::before {
+    background-image: none;
+  }
+}
+
+.form input[type="radio"] + label,
+.form label > input[type="radio"] + span {
+  &::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  &:active::after {
+    background-color: white;
+  }
+}
+
+.form input[type="radio"]:checked + label,
+.form label > input[type="radio"]:checked + span {
+  &::before {
+    background-color: white;
+  }
+
+  &::after {
+    background-color: white;
+    border: 1px solid #e5ddd5 ;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #d5c9bd;
+  }
+}
+
+.form button[type="submit"] {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 13px 20px;
+
+  font: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #826550;
+  border: 0;
+  outline: 0;
+
+  cursor: pointer;
+}

@@ -1,0 +1,134 @@
+/* Запись на стрижку */
+
+@media (min-width: $breakpoint-tablet) {
+  .haircut {
+    padding-bottom: 75px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .haircut__form {
+    display: flex;
+  }
+
+  .haircut__list {
+
+    &--client {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &--model {
+      justify-content: center;
+      margin-bottom: 55px;
+    }
+
+    &--add {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .haircut__title {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+
+      flex-grow: 1;
+      height: 1px;
+
+      background-color: #e5ddd5;
+    }
+
+    &::before {
+      left: 0;
+      margin-right: 25px;
+    }
+
+    &::after {
+      right: 0;
+      margin-left: 25px;
+    }
+  }
+
+  .haircut__list--add .haircut__title {
+    margin-bottom: 70px;
+  }
+
+  .haircut__item {
+    margin-bottom: 35px;
+
+    &--name {
+      width: 33.33333333333333%;
+    }
+
+    &--surname {
+      order: 0;
+      width: 33.33333333333333%;
+    }
+
+    &--patronymic {
+      width: 33.33333333333333%;
+    }
+
+    &--phone {
+      width: 100%;
+    }
+
+    &--email {
+      width: 100%;
+    }
+
+    &--info {
+      width: 100%;
+    }
+  }
+
+  .haircut__list--model .haircut__item {
+    width: auto;
+    margin-right: 3%;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .haircut__list--add .haircut__item {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+  }
+
+  .haircut__list span {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .haircut__item textarea {
+    min-height: 211px;
+  }
+
+  .haircut__form button[type="submit"] {
+    padding: 20px 40px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+}
